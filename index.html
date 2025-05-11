@@ -1,67 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Mother's Day</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      font-size: 3em;
-      color: #d6336c;
-      animation: popIn 1s ease-out;
-    }
-    p {
-      font-size: 1.5em;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-    .card {
-      background: white;
-      padding: 30px;
-      margin: 40px auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      max-width: 700px;
-    }
-    .heart {
-      color: red;
-      font-size: 2em;
-      animation: pulse 1s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-    @keyframes popIn {
-      from { transform: scale(0); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day</title>
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://example.com/your-background-image.jpg'); /* Replace with a real image URL */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        .main-content {
+            padding: 100px 20px; /* Make space for fixed navigation */
+        }
+
+        .main-content h2 {
+            font-size: 2rem;
+            margin-top: 50px;
+        }
+
+        .main-content p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .main-content img {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <h1>Happy Mother's Day 💐</h1>
-  <div class="card">
-    <p>Dear Mom,<br/><br/>
-    You are my sunshine on cloudy days, my comfort in times of trouble, and my biggest supporter in everything I do. Thank you for your endless love and care.<br/><br/>
-    <span class="heart">❤️</span><br/>
-    Love you always!</p>
-  </div>
-  <footer>
-    Made with love by [Your Name], Class 9 Student 💻
-  </footer>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Happy Mother’s Day!</h1>
+        <p>A day to celebrate the love and strength of all mothers.</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="home">
+            <h2>Welcome to Our Mother's Day Celebration</h2>
+            <p>Today, we honor and celebrate mothers around the world — their love, strength, and sacrifice.</p>
+            <p>Whether you're a mother or you have one, today is all about the incredible women who shape our lives.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Mother's Day</h2>
+            <p>Mother's Day is a day for people to express their love and gratitude to mothers, grandmothers, and mother figures. It is celebrated worldwide with flowers, gifts, and love.</p>
+            <img src="https://example.com/mothers-day-photo.jpg" alt="Mother and child" /> <!-- Replace with your image URL -->
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Some beautiful moments captured over the years, showing the bond between mothers and their children.</p>
+            <div>
+                <img src="https://example.com/gallery-image1.jpg" alt="Gallery Image 1" /> <!-- Replace with your image URL -->
+                <img src="https://example.com/gallery-image2.jpg" alt="Gallery Image 2" /> <!-- Replace with your image URL -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>If you have any questions or want to share your story, feel free to contact us!</p>
+            <p>Email us at <a href="mailto:mothersday@example.com">mothersday@example.com</a></p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mother's Day Celebration. All rights reserved. | Created with love by [Your Name].</p>
+    </footer>
 </body>
 </html>
-update
+update the file
